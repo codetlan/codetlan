@@ -16,6 +16,8 @@ Meteor.startup(function () {
 		}				
 	});
 
+	// envio del formulario
+
 	$('.button').live('click',function(e){
 		var name = $("#input_name"),
 		email = $("#input_email"),
