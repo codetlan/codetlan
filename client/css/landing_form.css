@@ -1,0 +1,171 @@
+@font-face {
+  font-family: 'fontello';
+  src: url('../../fonts/fontello/fontello.eot?75669620');
+  src: url('../../fonts/fontello/fontello.eot?75669620#iefix') format('embedded-opentype'),
+       url('../../fonts/fontello/fontello.woff?75669620') format('woff'),
+       url('../../fonts/fontello/fontello.ttf?75669620') format('truetype'),
+       url('../../fonts/fontello/fontello.svg?75669620#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?75669620#fontello') format('svg');
+  }
+}
+*/
+ 
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+     
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.icon-mail:before { content: '\e805'; } /* '' */
+.icon-paper-plane:before { content: '\e803'; } /* '' */
+.icon-twitter:before { content: '\e802'; } /* '' */
+.icon-facebook:before { content: '\e807'; } /* '' */
+.icon-github:before { content: '\e800'; } /* '' */
+.icon-github-1:before { content: '\e801'; } /* '' */
+.icon-gplus:before { content: '\e806'; } /* '' */
+.icon-user:before { content: '\e804'; } /* '' */
+
+
+
+.login-form, .signup-form, .forgot-pwd {
+	background:#fff;
+	border-radius: 4px;
+	padding:30px;
+	text-align:center;
+	margin-top: 50px;
+	width: 700px ;
+  	margin-left: auto ;
+  	margin-right: auto ;
+}
+.login-form, .forgot-pwd {
+	width:350px;
+}
+.signup-form {
+	width:600px;
+}
+.form-wrapper-01 {
+	margin: 0;
+	padding: 10px 0;
+}
+.form-wrapper-01 .inputbox {
+	border: 1px solid #eaedf2;
+	border-radius:3px;
+	height: 20px;
+	padding: 10px 0 10px 32px;
+	width: 44%;
+	outline:none;
+	margin-bottom:10px;
+	font-family: inherit;
+}
+.login-form .form-wrapper-01 .inputbox {
+	width:88%;
+}
+.form-wrapper-01 .name {
+	background:#eaedf2 url(img/user.png) 10px 13px no-repeat;
+}
+.form-wrapper-01 .email {
+	background:#eaedf2 url(img/email.png) 10px 15px no-repeat;
+}
+.form-wrapper-01 .password {
+	background:#eaedf2 url(img/password.png) 10px 10px no-repeat;
+}
+.form-wrapper-01 a.button {
+	background: none repeat scroll 0 0 #14B9D5;
+	border: none;
+	border-radius: 4px 4px 4px 4px;
+	color: #FFFFFF;
+	cursor: pointer;
+	font-family: inherit;
+	font-size: 35px;
+	font-weight: 700;
+	padding: 10px 20px 20px 0px;
+	width: 300px;
+}
+.form-wrapper-01 .button:hover {
+	background:#0099D2;
+}
+.form-wrapper-01 a.button > i {
+	font-size:20px;
+}
+*Social Button Styling*/
+.social {
+	margin: 40px 0px 10px -100px;
+}
+.social a {
+	color:#fff;
+	text-decoration:none;
+	font-weight:bold;
+	border-radius: 4px 4px 4px 4px;
+	padding:20px 0;
+}
+.social a.facebook {
+	color:#3b5998;
+	margin-left: 20px;
+}
+.social .twitter {
+	color:#1daee3;
+	margin: 0 26px;
+}
+.social .twitter:hover {
+	color:#1ca4d6;
+}
+.social .google {
+	color:#d34836;
+}
+.social .google:hover {
+	color:#c74534;
+}
+.social .github {
+	color:#000;
+}
+.social .github:hover {
+	color:#000;
+}
+.social .facebook > i, .social .twitter > i, .social .google > i, .social .github > i {
+	border-radius: 4px 0 0 4px;
+	bottom: 3px;
+	font-size: 38px;
+	padding: 10px 14px;
+	position: relative;
+	vertical-align: middle;
+	clear: both;
+}
+.social .facebook > span, .social .twitter > span, .social .google > span, .social .github > span {
+	font-size: 18px;
+	letter-spacing: 0.06em;
+	padding:24px 20px 24px 0;
+}
