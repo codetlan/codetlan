@@ -10,3 +10,5 @@ iron-router
 less
 jquery
 email
+accounts-facebook
+accounts-google

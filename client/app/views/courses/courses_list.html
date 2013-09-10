@@ -1,0 +1,14 @@
+<template name="courses_list">
+	<h1>Courses</h1>
+	<ul>
+		{{#each courses}}
+			<li>{{> course_list_item}}</li>
+		{{/each}}
+	</ul>
+</template>
+
+<template name="course_list_item">
+	<a href="{{pathFor 'course_show'}}">
+		{{name}}
+	</a>
+</template>

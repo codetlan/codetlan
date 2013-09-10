@@ -12,34 +12,12 @@ Router.map(function () {
 		// controller:'PostShowController',
 		// action:'show'
 	});
-});
-
-ApplicationController = RouteController.extend({
-
-});
-PostShowController = ApplicationController.extend({
-	template: 'postShow',
-	before :function () {
-		var _id =  this.params._id;
-
-		if(App.subs.post){
-			App.subs.post.stop();
-		}
-		App.subs.post = Meteor.subscribe('post',_id);
-	},
-	waitOn : function () {
-		return App.subs.post;
-	},
-
-	data : function () {
-		return Post.findOne({ _id : this.params._id});
-	},
-
-	run : function () {
-		this.render();
-		
-		this.render({
-			postShowSidebar:{ to : 'sidebar', waitOn : null}
-		});
-	}
+	this.route('courses',{
+		path:'/courses',
+		controller:'CoursesListController'
+	});
+	this.route('course_show',{
+		path:'/courses/:_id',
+		controller:'CourseShowController'
+	});
 });
